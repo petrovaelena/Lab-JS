@@ -1,12 +1,6 @@
 
 var CELL_Number = 4;
 
-
-
-
-
-
-
 function validator(input,type) {
     var value = input.value;
     //onkeydown
@@ -28,12 +22,9 @@ function validator(input,type) {
     }
 }
 
-
-
-
 function ReadInput() {
     var input = new XMLHttpRequest();
-    input.open("GET", "Files/input.xml", false);
+    input.open("GET", "input.xml", false);
     input.send();
     var data = input.responseXML;
     if (data) {
