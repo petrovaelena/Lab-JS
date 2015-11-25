@@ -24,7 +24,7 @@ function validator(input,type) {
 
 function ReadInput() {
     var input = new XMLHttpRequest();
-    input.open("GET", "input.xml", false);
+    input.open("GET", "Input.xml", false);
     input.send();
     var data = input.responseXML;
     if (data) {
